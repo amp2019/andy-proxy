@@ -1,23 +1,31 @@
 {
-  "name": "andy-proxy",
+  "name": "steve-proxy-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "combines team components",
+  "main": "./server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http-proxy-middleware": "^0.19.1",
+    "morgan": "^1.9.1",
+    "newrelic": "^5.6.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node ./server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amp2019/andy-proxy.git"
+    "url": "git+https://github.com/xillow-talk/steve-proxy-server.git"
   },
-  "author": "",
+  "author": "Steve Duong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amp2019/andy-proxy/issues"
+    "url": "https://github.com/xillow-talk/steve-proxy-server/issues"
   },
-  "homepage": "https://github.com/amp2019/andy-proxy#readme",
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+  "homepage": "https://github.com/xillow-talk/steve-proxy-server#readme"
 }
