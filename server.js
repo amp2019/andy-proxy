@@ -26,6 +26,10 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.get('/loaderio-e07904ddf29d33fe204aa39f3c85bf70/', (req,res) => {
+  res.send('loaderio-e07904ddf29d33fe204aa39f3c85bf70')
+});
+
 //BUT will the posts get to the right spot with arterillery - that's the right test. 
 //optimization may be getting rid of the 307 and replacing with request.post
 //app.get('/api', (req,res) => res.redirect('http://localhost:8083/api'))
