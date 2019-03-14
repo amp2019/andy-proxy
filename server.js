@@ -11,6 +11,8 @@ const port = process.env.PORT || 9000;
 
 const myProxy = proxy(['/api'], {
   target: 'http://localhost:8083',
+  // target: 'http://172.31.30.165:8083', 172.31.49.111
+  // target: 'http://172.31.49.111',
   changeOrigin: true,
   xfwd: true
 });
@@ -60,7 +62,10 @@ app.get('/loaderio-e07904ddf29d33fe204aa39f3c85bf70/', (req,res) => {
 
 
 app.get('/:houseId', (req, res) => {
-  // let houseId = req.params.houseId;
+  res.sendFile(path.resolve(__dirname + '/public/index.html'));
+});
+
+app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/public/index.html'));
 });
 
